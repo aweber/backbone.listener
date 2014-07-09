@@ -1,7 +1,7 @@
 Backbone.Listener
 =================
-A simple plugin that adds a new object type for easily binding to ``Backbone.Events``
-similar to how you can bind to DOM events with ``Backbone.View``.
+A simple plugin that adds a new object type for easily binding to events trigged
+on the Backbone object similar to how you can bind to DOM events with ``Backbone.View``.
 
 Requirements
 ------------
