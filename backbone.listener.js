@@ -1,5 +1,5 @@
 /**
- * Backbone.Native
+ * Backbone.Listener
  *
  * For all details and documentation:
  * http://github.com/AWeber/backbone.listener
