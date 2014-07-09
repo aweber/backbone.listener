@@ -1,0 +1,2 @@
+Backbone.Listener=function(a,b){void 0===b&&(b={}),this.cid=_.uniqueId("c"),_.extend(this,_.pick(b,listenerOptions)),this.bindEvents(),this.initialize.apply(this,arguments)},_.extend(Backbone.Listener.prototype,Backbone.Events,{initialize:function(){},bindEvents:function(a){if(!a&&!(a=_.result(this,"events")))return this;for(var b in a){var c=a[b];_.isFunction(c)||(c=this[a[b]]),c&&Backbone.on(b,c)}return this}});var listenerOptions=["model","collection","id","attributes","events"];Backbone.Listener.extend=Backbone.extend;
+//# sourceMappingURL=backbone.listener-min.map

@@ -1,0 +1,29 @@
+{
+  "name": "backbone.listener",
+  "version": "0.1.0",
+  "homepage": "https://github.com/aweber/backbone.listener.git",
+  "authors": [
+    "gmr"
+  ],
+  "description": "A simple Backbone plugin to create Backbone.Event listener objects",
+  "main": "backbone.listener.js",
+  "keywords": [
+    "backbone"
+  ],
+  "dependencies": {
+    "jquery": "1.11.0",
+    "backbone": "~1.1.2",
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {
+    "jasmine": "~1.3.1"
+  },
+  "license": "BSD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "spec_runner.html",
+    "spec"
+  ]
+}

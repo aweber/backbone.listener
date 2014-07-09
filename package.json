@@ -1,0 +1,40 @@
+{
+  "name": "backbone.listener",
+  "description": "A simple Backbone plugin to create Backbone.Event listener objects",
+  "version": "0.1.0",
+  "homepage": "https://github.com/aweber/backbone.listener",
+  "author": {
+    "name": "Gavin M. Roy",
+    "email": "gavinr@aweber.com",
+    "url": "http://aweber.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aweber/backbone.listener.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aweber/backbone.listener/issues"
+  },
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "https://github.com/aweber/backbone.listener/blob/master/LICENSE"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-bower-task": "0.3.4",
+    "grunt-contrib-clean":  "0.5.0",
+    "grunt-contrib-jasmine": "0.6.5",
+    "grunt-contrib-jshint":  "0.10.0",
+    "grunt-contrib-uglify": "0.5.0"
+  },
+  "keywords": [
+    "backbone",
+    "plugin"
+  ]
+}
