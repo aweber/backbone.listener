@@ -1,18 +1,36 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     bower: {
-      install: {
-         //just run 'grunt bower:install' and you'll see files from your Bower packages in lib directory
+      dev: {
+        dest: 'lib'
       }
     },
     clean: {
-      components: "lib",
+      bower_components: "bower_components",
+      coverage: "coverage",
+      lib: "lib",
       min: "backbone.listener-min.*"
+    },
+    coveralls: {
+      options: {
+        src: 'coverage/lcov.info',
+        force: false
+      }
     },
     jasmine : {
       src : 'backbone.listener.js',
-      options : {
+      options: {
         specs : 'spec/*.spec.js',
+        template: require('grunt-template-jasmine-istanbul'),
+        templateOptions: {
+          coverage: 'coverage/coverage.json',
+          report:  {
+            type: 'lcov',
+            options: {
+              dir: 'coverage'
+            }
+          }
+        },
         vendor : [
           'lib/jquery/dist/jquery.min.js',
           'lib/underscore/underscore.js',
@@ -41,8 +59,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jasmine');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-coveralls');
 
-  grunt.registerTask('test', ['jshint', 'jasmine']);
+  grunt.registerTask('test', ['jshint', 'jasmine', 'coveralls']);
   grunt.registerTask('default', ['bower', 'test', 'uglify']);
 
 };

@@ -1,7 +1,7 @@
 {
   "name": "backbone.listener",
   "description": "A simple Backbone plugin to create Backbone.Event listener objects",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/aweber/backbone.listener",
   "author": {
     "name": "Gavin M. Roy",
@@ -34,7 +34,9 @@
     "grunt-contrib-clean":  "0.5.0",
     "grunt-contrib-jasmine": "0.6.5",
     "grunt-contrib-jshint":  "0.10.0",
-    "grunt-contrib-uglify": "0.5.0"
+    "grunt-contrib-uglify": "0.5.0",
+    "grunt-coveralls": "0.3.0",
+    "grunt-template-jasmine-istanbul": "0.3.1"
   },
   "keywords": [
     "backbone",
