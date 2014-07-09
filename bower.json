@@ -1,9 +1,13 @@
 {
   "name": "backbone.listener",
   "version": "0.1.0",
-  "homepage": "https://github.com/aweber/backbone.listener.git",
+  "homepage": "https://github.com/aweber/backbone.listener",
   "authors": [
-    "gmr"
+    {
+      "name": "Gavin M. Roy",
+      "email": "gavinr@aweber.com",
+      "homepage": "http://aweber.com"
+    }
   ],
   "description": "A simple Backbone plugin to create Backbone.Event listener objects",
   "main": "backbone.listener.js",
